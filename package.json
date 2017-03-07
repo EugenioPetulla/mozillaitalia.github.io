@@ -1,0 +1,19 @@
+{
+  "name": "codeat",
+  "version": "1.0.0",
+  "description": "Codeat Website",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eugenio Petullà",
+  "license": "GPL-2.0"
+}
