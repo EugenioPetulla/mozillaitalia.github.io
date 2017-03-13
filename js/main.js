@@ -2,7 +2,7 @@
 $(document).ready(function(){   
 	//When btn is clicked
 	$(".menu-toggle").click(function() {
-		$(".nav-container").toggleClass("show");
+		$(".nav-container").toggleClass("show animated fadeInLeft");
     $(".menu-toggle").toggleClass("show");
 	});
 });

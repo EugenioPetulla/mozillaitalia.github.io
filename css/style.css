@@ -7,10 +7,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	color: #333;
-	line-height: 1.4;
+	font-size: 20px;
+	font-weight: 400;
+	color: #56565a;
+	line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -104,14 +104,21 @@ header .wrap {
 --------------------------------------------- */
 
 section {
-	padding: 100px 0;
 	display: block;
+	overflow: auto;
+}
+
+section.padded {
+	padding: 100px 0;
+}
+
+section.bordered {
 	border-bottom: 2px solid #d93a33;
 }
 
 .wrap {
 	max-width: 900px;
-	padding: 20px 40px;
+	padding: 40px 40px;
 	display: block;
 	margin: 0 auto;
 	clear: both;
@@ -175,10 +182,15 @@ a.button.ghost:hover {
 	text-decoration: underline;
 }
 
-section.colored {
+section.colored,
+div.colored {
 	background: #d93a33;
 	color: #FFF;
 	border-color: #FFF;
+}
+
+.centered {
+	text-align: center;
 }
 
 /* CTA Section
@@ -243,6 +255,14 @@ section.cta #slideflow ul {
 
 img {
 	width: 100%;
+}
+
+img.round {
+	border-radius: 50%;
+}
+
+img.squared {
+	border-radius: 4%;
 }
 
 
@@ -377,7 +397,7 @@ footer a span:hover {
 	transform: translateY(-5px);
 }
 
-/* Slider background image (delete when slider section will be defined)
+/* Slider section (to be modified when slider section will be defined)
 ------------------------------------------------------------------------ */
 
 section#slider {
@@ -389,10 +409,24 @@ section#slider {
 	background-size: cover;
 }
 
+#slider h3 {
+	font-weight: 400;
+}
+
 .opacity-layer {
 	display: block;
 	background-color: rgba(0,0,0,.5);
-	padding: 100px 0;
+	padding: 100px 0 0;
+	height: calc(100vh - 100px);
+	overflow: hidden;
+}
+
+/* Map section (to be modified when map section will be defined)
+------------------------------------------------------------------------ */
+
+section#map {
+	padding: 0;
+	margin: 0;
 }
 
 /* Column Classes
